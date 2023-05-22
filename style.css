@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --lime-color--dark: #66A80F;
+  --lime-color--dark-2: #5c940d;
+  --lime-color-light: #C0EB75;
+  --grey-color--light: #EEEEEE;
+  --grey-color--dark: #ADB5BD;
+
+  --glass-color: rgba(255, 255, 255, .3);
+}
+
+/****************************
+BASE
+****************************/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  background-image: url(./images/chris-lee-70l1tDAI6rM-unsplash\ 1.png);
+}
+
+/****************************
+HEADER
+****************************/
+.header {
+  display: flex;
+  background-color: var(--lime-color-light);
+  align-items: center;
+  padding: .5rem 1rem;
+}
+
+.header h1 {
+  font-size: 4rem;
+  color: var(--grey-color--dark);
+  margin-right: auto;
+}
+
+.nav-list .btn {
+  border: none;
+  cursor: pointer;
+  background-color: var(--lime-color--dark);
+  color: var(--grey-color--light);
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+  box-shadow: 0px 3px 4px black;
+  transition: all .2s;
+  border-bottom: 7px solid var(--lime-color--dark-2);
+}
+
+.nav-list .btn:active {
+  transform: translateY(5px);
+  border-bottom: 1px solid var(--lime-color--dark);
+}
+
+.nav-list .btn--pdf {
+  margin-right: 1rem;
+}
+
+.nav-list .btn--contact {
+  margin-left: 2.5rem;
+}
+
+/****************************
+CONTAINER
+****************************/
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  gap: 3rem;
+}
+
+.container h2 {
+  padding: 2rem;
+}
+
+.md-editor-container {
+  width: 62.5rem;
+  height: 60rem;
+  background-color: white;
+  border-top: 1px solid var(--glass-color);
+  border-left: 1px solid var(--glass-color);
+  border-radius: 15px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.4);
+  background-color: var(--glass-color);
+  backdrop-filter: blur(5px);
+}
+
+.md-editor-container textarea {
+  background-color: black !important;
+}
+
+.preview-container {
+  width: 62.5rem;
+  height: 60rem;
+  background-color: white;
+  border-top: 1px solid var(--glass-color);
+  border-left: 1px solid var(--glass-color);
+  border-radius: 15px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.4);
+  background-color: var(--glass-color);
+  backdrop-filter: blur(5px);
+}
+
+.CodeMirror-scroll {
+  background-color: var(--glass-color);
+}
