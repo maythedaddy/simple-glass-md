@@ -68,11 +68,11 @@ HEADER
 }
 
 .nav-list .btn--pdf {
-  margin-right: 1rem;
+  margin-right: 4rem;
 }
 
 .nav-list .btn--contact {
-  margin-left: 2.5rem;
+  margin-left: 8rem;
 }
 
 /****************************
@@ -88,6 +88,7 @@ CONTAINER
 
 .container h2 {
   padding: 2rem;
+  color: var(--lime-color-light);
 }
 
 .md-editor-container {
@@ -103,7 +104,7 @@ CONTAINER
 }
 
 .md-editor-container textarea {
-  background-color: black !important;
+  background-color: transparent;
 }
 
 .preview-container {
@@ -118,6 +119,19 @@ CONTAINER
   backdrop-filter: blur(5px);
 }
 
-.CodeMirror-scroll {
-  background-color: var(--glass-color);
+.preview p {
+  padding: 2rem;
+  font-size: 2.5rem;
+}
+
+/****************************
+SIMPLEMDE STYLE CUSTOMIZE
+****************************/
+.CodeMirror {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.editor-toolbar {
+  border: none !important;
 }
