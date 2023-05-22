@@ -4,5 +4,6 @@
 
 Simple markdown application design with glass-like cards✨<br>
 
-⚠️The above images are for illustrative purposes only.<br>
+⚠️You can do a git clone and use it locally as a markdown editor.<br>
+⚠️The above images are for illustrative purposes only.
 ⚠️The button in the header is a dummy button.
