@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap'); */
+@import url('https://fonts.cdnfonts.com/css/futura-pt');
 
 :root {
   --lime-color--dark: #66A80F;
@@ -26,9 +27,13 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Futura PT', sans-serif;
   height: 100vh;
   background-image: url(./images/chris-lee-70l1tDAI6rM-unsplash\ 1.png);
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /****************************
@@ -39,6 +44,20 @@ HEADER
   background-color: var(--lime-color-light);
   align-items: center;
   padding: .5rem 1rem;
+}
+
+.logo {
+  width: 5rem;
+  height: 5rem;
+  position: relative;
+}
+
+.logo svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: var(--grey-color--dark);
 }
 
 .header h1 {
@@ -87,13 +106,16 @@ CONTAINER
 }
 
 .container h2 {
+  font-size: 2.5rem;
   padding: 2rem;
   color: var(--lime-color-light);
+  text-align: center;
 }
 
 .md-editor-container {
   width: 62.5rem;
-  height: 60rem;
+  /* height: 60rem; */
+  min-height: 70vh;
   background-color: white;
   border-top: 1px solid var(--glass-color);
   border-left: 1px solid var(--glass-color);
@@ -109,7 +131,8 @@ CONTAINER
 
 .preview-container {
   width: 62.5rem;
-  height: 60rem;
+  /* height: 60rem; */
+  min-height: 70vh;
   background-color: white;
   border-top: 1px solid var(--glass-color);
   border-left: 1px solid var(--glass-color);
@@ -119,9 +142,14 @@ CONTAINER
   backdrop-filter: blur(5px);
 }
 
+.preview {
+  font-size: 3rem;
+  padding-left: 5rem;
+}
+
 .preview p {
   padding: 2rem;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 /****************************
@@ -134,4 +162,8 @@ SIMPLEMDE STYLE CUSTOMIZE
 
 .editor-toolbar {
   border: none !important;
+}
+
+.CodeMirror-line span {
+  font-size: 3rem;
 }
