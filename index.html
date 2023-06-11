@@ -1,45 +1,56 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Glass Markdown</title>
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Glass Markdown</title>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <svg
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+        >
+          <path
+            d="M31.604 4.203c-3.461-2.623-8.787-4.189-14.247-4.189-6.754 0-12.257 2.358-15.099 6.469-1.335 1.931-2.073 4.217-2.194 6.796-0.108 2.296 0.278 4.835 1.146 7.567 2.965-8.887 11.244-15.847 20.79-15.847 0 0-8.932 2.351-14.548 9.631-0.003 0.004-0.078 0.097-0.207 0.272-1.128 1.509-2.111 3.224-2.846 5.166-1.246 2.963-2.4 7.030-2.4 11.931h4c0 0-0.607-3.819 0.449-8.212 1.747 0.236 3.308 0.353 4.714 0.353 3.677 0 6.293-0.796 8.231-2.504 1.736-1.531 2.694-3.587 3.707-5.764 1.548-3.325 3.302-7.094 8.395-10.005 0.292-0.167 0.48-0.468 0.502-0.804s-0.126-0.659-0.394-0.862z"
+          ></path>
+        </svg>
+      </div>
+      <h1>SMP GLS MD</h1>
+      <nav class="nav-list">
+        <button class="btn btn--pdf">pdf</button>
+        <button class="btn btn--save">save</button>
+        <button class="btn btn--contact">contact</button>
+      </nav>
+    </header>
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+    <div class="container">
+      <div class="md-editor-container">
+        <h2>Editor</h2>
+        <!-- <textarea id="editor" placeholder="here"></textarea> -->
+        <textarea id="editor"></textarea>
+      </div>
 
-  <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
-
-  <!-- <link rel="stylesheet" href="https://unpkg.com/easymde/dist/easymde.min.css">
-  <script src="https://unpkg.com/easymde/dist/easymde.min.js"></script> -->
-</head>
-
-<body>
-  <header class="header">
-    <h1>SMP GLS MD</h1>
-    <nav class="nav-list">
-      <button class="btn btn--pdf">pdf</button>
-      <button class="btn btn--save">save</button>
-      <button class="btn btn--contact">contact</button>
-    </nav>
-  </header>
-
-  <div class="container">
-    <div class="md-editor-container">
-      <h2>Editor</h2>
-      <!-- <textarea id="editor" placeholder="here"></textarea> -->
-      <textarea id="editor"></textarea>
+      <div class="preview-container">
+        <h2>Preview</h2>
+        <div class="preview"></div>
+      </div>
     </div>
 
-    <div class="preview-container">
-      <h2>HTML Preview</h2>
-      <div class="preview"></div>
-    </div>
-  </div>
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
 
-  <script src="./script.js"></script>
-</body>
-
+    <script src="./script.js"></script>
+  </body>
 </html>
