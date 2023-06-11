@@ -1,6 +1,5 @@
 # simple-glass-md
-
-![simple-gls-md](https://github.com/maythedaddy/simple-glass-md/assets/35832485/4c2fd0bf-c4ea-46c5-80cb-19c60d068d75)
+<img width="600" alt="スクリーンショット 2023-06-11 15 22 12" src="https://github.com/maythedaddy/simple-glass-md/assets/35832485/9829327a-44fd-407b-b79e-a94d038adffa">
 
 Simple markdown application design with glass-like cards✨<br>
 
