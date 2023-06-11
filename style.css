@@ -4,7 +4,7 @@
 :root {
   --lime-color--dark: #66A80F;
   --lime-color--dark-2: #5c940d;
-  --lime-color-light: #C0EB75;
+  --lime-color-light: #c0eb75;
   --grey-color--light: #EEEEEE;
   --grey-color--dark: #ADB5BD;
 
@@ -27,7 +27,6 @@ html {
 }
 
 body {
-  /* font-family: 'Poppins', sans-serif; */
   font-family: 'Futura PT', sans-serif;
   height: 100vh;
   background-image: url(./images/chris-lee-70l1tDAI6rM-unsplash\ 1.png);
@@ -41,7 +40,7 @@ HEADER
 ****************************/
 .header {
   display: flex;
-  background-color: var(--lime-color-light);
+  background-color: var(--glass-color);
   align-items: center;
   padding: .5rem 1rem;
 }
@@ -57,12 +56,13 @@ HEADER
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  fill: var(--grey-color--dark);
+  fill: var(--lime-color-light);
+  ;
 }
 
 .header h1 {
   font-size: 4rem;
-  color: var(--grey-color--dark);
+  color: var(--lime-color-light);
   margin-right: auto;
 }
 
